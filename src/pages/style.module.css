@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+
+/* Main Page */
+.main_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+/* Search Box  */
+.search_container {
+    height: 5%;
+    border-radius: 5px;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_container button {
+    background: none;
+    border: none;
+}
+
+.search_container h1 {
+    font-size: 35px;
+    color: aliceblue;
+    font-family: 'Yeseva One', cursive;
+}
+
+.search_container input {
+    padding: 5px 10px 5px 10px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: larger;
+    box-shadow: 0px 0px 100px 53px rgba(0, 0, 0, 0.1);
+    background-color: rgb(254, 224, 0);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    height: 40px;
+}
+
+.search_container input::placeholder {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.search {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+
+/* Movie Container page */
+.movie_container {
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.movie_box {
+    height: 350px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px 30px 30px 30px;
+    overflow: hidden;
+    box-shadow: 0px 18px 18px -3px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.movie_box:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.movie_image {
+    flex: 3;
+    overflow: hidden;
+}
+
+.movie_name {
+    background-color: #205e5b;
+    color: white;
+    flex: 1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: inline-block;
+}
+
+/* Movie detail Page */
+.Moviedetail_container {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.big_movieposter {
+    width: 50%;
+    height: 80%;
+    border-radius: 30px;
+    transition: 0.2s;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.big_movieposter:hover {
+    transform: scale(1.1);
+}
+
+.big_movieposter img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.movie_detail {
+    width: 35%;
+    height: 80%;
+    border-radius: 30px;
+    overflow: hidden;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.movie_detail:hover {
+    transform: scale(1.1);
+}
+
+.movie_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 95%;
+    padding-left: 5%;
+}
+
+.movie_title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgb(132, 0, 255);
+}
+
+.movie_description {
+    color: rgb(8, 32, 105);
+}
+
+.movie_rating {
+    font-weight: 900;
+    background-color: rgb(204, 204, 16);
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+    border-radius: 5px;
+}
+
+.movie_rating p {
+    padding: 10px;
+}
+
+.release_date {
+    font-size: 12px;
+    color: red;
+    font-weight: 500;
+}
+
+.movie_vote {
+    font-weight: 900;
+    background-color: blue;
+    color: white;
+    width: 8rem;
+    border-radius: 5px;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    padding-left: 5%;
+}
